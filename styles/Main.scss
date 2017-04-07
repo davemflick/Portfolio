@@ -1,0 +1,121 @@
+*{box-sizing: border-box;}
+
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	padding-top: 0;
+	padding-left: 0;
+	text-align: center;
+}
+
+$medScreen: 852px;
+$smallScreen: 600px;
+
+.navbar-default, .navbar{ 
+	height: 65px;
+	background: rgba(50,50,50,0);
+	font-size: 1.5em;
+	padding: 10px 32px;
+	margin-bottom: 0;
+	border: 0;
+	 -webkit-box-shadow: none;
+	box-shadow: none;
+	.collapse {
+		background: rgba(50,50,50, 0);
+		margin-left: 0;
+		.pdLink {
+			color: #aaa;
+			margin: 0;
+		}
+	}
+}
+
+.navbar-default:hover {
+	background-color: rgba(50, 50, 50, .1);
+}
+
+.openingContainer {
+	display: flex;
+	justify-content: center;
+	height: 700px;
+	padding-top: 150px;
+	background-image: url("./images/golf.png");
+	background-size: cover;
+	font-family: monospace;
+	text-decoration: underline;
+	color: rgba(80, 80, 80, .8);
+}
+
+.aboutContainer {
+	background-color: rgba(223, 224, 140, .3);
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 50px 0 50px 0;
+	.aboutPara{
+		width: 30%;
+		font-size: 20px;
+	}
+	.mePic {
+		width: 35%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		#profileImg {
+			width: 250px;
+		}
+	}
+	.linkContainer {
+		width: 15%;
+		padding-left: none;
+		.fa-linkedin-square{color: #007bb6;}
+		.fa-free-code-camp{color: #09b609;}
+		.fa-github{color:#444;}
+	}
+
+	@media screen and (max-width: $medScreen) {
+		.aboutPara { width: 100%;}
+		.mePic { width: 40%;}
+		.linkContainer {width: 40%;}
+	}
+	@media screen and (max-width: $smallScreen) {
+		.aboutPara {
+			width: 90%;
+			margin-bottom: 20px;
+		}
+		.mePic {
+			width: 90%;
+			margin-bottom: 20px;
+		}
+		.linkContainer {
+			width: 90%;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.projectsContainer {
+	height: 1000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// golf.png obtained from http://theprairieclub.com/wp-content/themes/prairie-club/img/home-course-dunes.png
+
+
+

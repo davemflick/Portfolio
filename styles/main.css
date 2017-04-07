@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box; }
+
+body, html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  padding-top: 0;
+  padding-left: 0;
+  text-align: center; }
+
+.navbar-default, .navbar {
+  height: 65px;
+  background: rgba(50, 50, 50, 0);
+  font-size: 1.5em;
+  padding: 10px 32px;
+  margin-bottom: 0;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  .navbar-default .collapse, .navbar .collapse {
+    background: rgba(50, 50, 50, 0);
+    margin-left: 0; }
+    .navbar-default .collapse .pdLink, .navbar .collapse .pdLink {
+      color: #aaa;
+      margin: 0; }
+
+.navbar-default:hover {
+  background-color: rgba(50, 50, 50, 0.1); }
+
+.openingContainer {
+  display: flex;
+  justify-content: center;
+  height: 700px;
+  padding-top: 150px;
+  background-image: url("./images/golf.png");
+  background-size: cover;
+  font-family: monospace;
+  text-decoration: underline;
+  color: rgba(80, 80, 80, 0.8); }
+
+.aboutContainer {
+  background-color: rgba(223, 224, 140, 0.3);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px 0 50px 0; }
+  .aboutContainer .aboutPara {
+    width: 30%;
+    font-size: 20px; }
+  .aboutContainer .mePic {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .aboutContainer .mePic #profileImg {
+      width: 250px; }
+  .aboutContainer .linkContainer {
+    width: 15%;
+    padding-left: none; }
+    .aboutContainer .linkContainer .fa-linkedin-square {
+      color: #007bb6; }
+    .aboutContainer .linkContainer .fa-free-code-camp {
+      color: #09b609; }
+    .aboutContainer .linkContainer .fa-github {
+      color: #444; }
+  @media screen and (max-width: 852px) {
+    .aboutContainer .aboutPara {
+      width: 100%; }
+    .aboutContainer .mePic {
+      width: 40%; }
+    .aboutContainer .linkContainer {
+      width: 40%; } }
+  @media screen and (max-width: 600px) {
+    .aboutContainer .aboutPara {
+      width: 90%;
+      margin-bottom: 20px; }
+    .aboutContainer .mePic {
+      width: 90%;
+      margin-bottom: 20px; }
+    .aboutContainer .linkContainer {
+      width: 90%;
+      margin-bottom: 20px; } }
+
+.projectsContainer {
+  height: 1000px; }
+
+/*# sourceMappingURL=Main.css.map */
