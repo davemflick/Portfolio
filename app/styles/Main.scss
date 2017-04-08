@@ -1,0 +1,270 @@
+*{box-sizing: border-box;}
+
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	padding-top: 0;
+	padding-left: 0;
+	text-align: center;
+	font-family: 'Bitter', monospace;
+}
+
+$medScreen: 852px;
+$smallScreen: 600px;
+$lightGray: #ececec;
+$offWhite: #fbfbfb;
+$tan: #c2b394;
+$brightBlue: #53b0bd;
+$darkblue: #12646f;
+
+.navbar-default, .navbar{ 
+	height: 65px;
+	background: rgba(50,50,50,0);
+	font-size: 1.5em;
+	padding: 10px 32px;
+	margin-bottom: 0;
+	border: 0;
+	 -webkit-box-shadow: none;
+	box-shadow: none;
+	.collapse {
+		background: rgba(50,50,50, 0);
+		margin-left: 0;
+		.pdLink {
+			color: #aaa;
+			margin: 0;
+		}
+	}
+}
+
+.navbar-default:hover {
+	background-color: rgba(50, 50, 50, .1);
+}
+
+.openingContainer {
+	display: flex;
+	justify-content: center;
+	height: 700px;
+	padding-top: 150px;
+	background-image: url("./images/golf.png");
+	background-size: cover;
+	font-family: monospace;
+	text-decoration: underline;
+	color: rgba(80, 80, 80, .8);
+}
+
+.aboutContainer {
+	background-color: $lightGray;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 50px 0 50px 0;
+	.aboutPara{
+		width: 30%;
+		font-size: 17px;
+		color: $darkblue;
+	}
+	.mePic {
+		width: 35%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		#profileImg {
+			width: 250px;
+			border: 2px solid $brightBlue;
+		}
+		#profileImg2 {
+			width: 245px;
+			display: none;
+			border: 2px solid $brightBlue;
+		}
+
+	}
+	.linkContainer {
+		width: 15%;
+		padding-left: none;
+		.fa-linkedin-square{color: #007bb6;}
+		.fa-linkedin-square:hover{color: #33bdda;}
+		.fa-free-code-camp{color: #09b609;}
+		.fa-free-code-camp:hover{color: #3ada3a;}
+		.fa-github{color:#444;}
+		.fa-github:hover{color:#888;}
+	}
+
+	@media screen and (max-width: $medScreen) {
+		.aboutPara { width: 100%;}
+		.mePic { width: 40%;}
+		.linkContainer {width: 40%;}
+	}
+	@media screen and (max-width: $smallScreen) {
+		.aboutPara {
+			width: 90%;
+			margin-bottom: 20px;
+		}
+		.mePic {
+			width: 90%;
+			margin-bottom: 20px;
+		}
+		.linkContainer {
+			width: 90%;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.techContainer {
+	padding: 30px 0 30px 0;
+	background-color: $darkblue;
+	h3 {
+		margin-bottom: 30px;
+		text-decoration: underline;
+		color: $brightBlue;
+	}
+	.iconCont {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		#bootstrap {
+			color: #997aff;
+		}
+
+		i {
+			 width: 10%;
+			 font-size: 50px;
+			 padding-bottom: 35px;
+		}
+		@media screen and (max-width: $medScreen)
+		{
+			i {
+				width: 20%;
+			}
+		}
+	}
+	
+}
+
+.projCont {
+	margin-top: 0;
+	padding: 40px 0 40px 0;
+	background-color: $offWhite;
+	h3 {text-decoration: underline;}
+	color: $darkblue;
+	.projectsContainer {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+
+		.project{
+			width: 260px;
+			height: 260px;
+			margin: 5px;
+			padding-bottom: 50px;
+			.projLink {
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				align-items: center;
+
+				img {
+					max-width: 260px;
+					max-height: 260px;
+					border: 3px solid $brightBlue;
+					border-radius: 5%;
+				}
+			}
+		}
+
+	}
+}
+
+.certContainer {
+	background-color: $lightGray;
+	padding: 30px 0 30px 0;
+	h3 {
+		text-decoration: underline;
+	}
+
+	.certName{
+		display: flex;
+		justify-content: space-around;
+		cursor: pointer;
+		color: $brightBlue;
+	}
+	.certs{
+		position: fixed;
+    	z-index: 1;
+    	left: 0;
+    	top: 0;
+    	width: 100%; 
+    	height: 100%; 
+    	overflow: auto; 
+    	background-color: rgb(0,0,0); 
+    	background-color: rgba(0,0,0,0.4);
+		.popUpFcc {
+			background-color: $brightBlue;
+   			margin: 15% auto;
+    		padding: 20px;
+    		border: 1px solid #888;
+    		width: 80%;
+    		.exit {
+    			color: $brightBlue;
+			    float: right;
+			    font-size: 28px;
+			    font-weight: bold;
+    		}
+		}
+		.popUpStanford {
+			background-color: $brightBlue;
+    		margin: 15% auto; 
+    		padding: 20px;
+    		border: 1px solid #888;
+    		width: 80%;
+    		.exit {
+    			color: $brightBlue;
+			    float: right;
+			    font-size: 28px;
+			    font-weight: bold;
+    		}
+		}
+		img{
+			max-width: 500px;
+			max-height: 500px; 
+		}
+	}
+}
+
+.contactContainer {
+	h3{
+		text-decoration: underline;
+	}
+	padding: 30px 0 30px 0;
+	background-color: $brightBlue;
+	color: $darkblue;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// golf.png obtained from http://theprairieclub.com/wp-content/themes/prairie-club/img/home-course-dunes.png
+
+
+
