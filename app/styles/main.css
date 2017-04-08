@@ -20,12 +20,13 @@ body {
   border: 0;
   -webkit-box-shadow: none;
   box-shadow: none; }
-  .navbar-default .collapse, .navbar .collapse {
-    background: rgba(50, 50, 50, 0.1);
+  .navbar-default .navbar-collapse, .navbar .navbar-collapse {
     margin-left: 0; }
-    .navbar-default .collapse .pdLink, .navbar .collapse .pdLink {
+    .navbar-default .navbar-collapse .pdLink, .navbar .navbar-collapse .pdLink {
       color: #aaa;
       margin: 0; }
+    .navbar-default .navbar-collapse .pdLink:hover, .navbar .navbar-collapse .pdLink:hover {
+      background: rgba(50, 50, 50, 0.1); }
 
 .navbar-default:hover {
   background-color: rgba(50, 50, 50, 0.1); }
