@@ -43,12 +43,12 @@ export default class Certificates extends React.Component {
 				<div className="certs" style={this.state.style}>
 
 					<div className="popUpFcc" style={this.state.styleFcc}>
-						<img id="fccFE" src="../app/styles/images/fccFrontEnd.png" alt="freeCodeCamp Front-End" />
+						<img id="fccFE" src="./app/styles/images/fccFrontEnd.png" alt="freeCodeCamp Front-End" />
 						<button className="exit" onClick={this.handleClick.bind(this)}> X </button>
 					</div>
 
 					<div className="popUpStanford" style={this.state.styleStan}>
-						<img id="stanford101" src="../app/styles/images/stanford.png" alt="stanford 101" />
+						<img id="stanford101" src="./app/styles/images/stanford.png" alt="stanford 101" />
 						<button className="exit" onClick={this.handleClick.bind(this)}> X </button>
 					</div>
 				</div>
