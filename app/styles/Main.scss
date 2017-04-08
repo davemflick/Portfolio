@@ -30,7 +30,7 @@ $darkblue: #12646f;
 	 -webkit-box-shadow: none;
 	box-shadow: none;
 	.collapse {
-		background: rgba(50,50,50, 0);
+		background: rgba(50,50,50, .1);
 		margin-left: 0;
 		.pdLink {
 			color: #aaa;
@@ -194,8 +194,18 @@ $darkblue: #12646f;
 		display: flex;
 		justify-content: space-around;
 		cursor: pointer;
+		flex-wrap: wrap;
 		color: $brightBlue;
 	}
+
+	@media (max-width: $smallScreen) {
+		.certName {
+			h4 {
+				width: 100%;
+			}
+		}
+	}
+	
 	.certs{
 		position: fixed;
     	z-index: 1;
@@ -236,7 +246,25 @@ $darkblue: #12646f;
 			max-width: 500px;
 			max-height: 500px; 
 		}
+
+		@media (max-width: $smallScreen) {
+			.popUpFcc, .popUpStanford {
+				margin: 15% 0;
+				padding: 10px;;
+				width: 100%;
+				.exit {
+					display: none;
+				}
+			}
+
+			img {
+				max-width: 300px;
+				max-height: 300px;
+			}
+		}
 	}
+
+
 }
 
 .contactContainer {

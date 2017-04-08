@@ -23,7 +23,7 @@ export default class Certificates extends React.Component {
 			this.state.styleStan = {display: "inline-block"};
 			this.state.style = {display: "inline-block"};
 		}
-		if(e.target.className == "exit") {
+		if(e.target.className == "exit" || e.target.className == "certs") {
 			this.state.styleFcc = {display: "none"};
 			this.state.styleStan = {display: "none"};
 			this.state.style = {display: "none"};
@@ -40,7 +40,7 @@ export default class Certificates extends React.Component {
 					<h4 id="fcc" onClick={this.handleClick.bind(this)}> freeCodeCamp Front-End </h4>
 					<h4 id="stanford" onClick={this.handleClick.bind(this)}> Stanford cs101 </h4>
 				</div>
-				<div className="certs" style={this.state.style}>
+				<div className="certs" style={this.state.style} onClick={this.handleClick.bind(this)}>
 
 					<div className="popUpFcc" style={this.state.styleFcc}>
 						<img id="fccFE" src="./app/styles/images/fccFrontEnd.png" alt="freeCodeCamp Front-End" />
