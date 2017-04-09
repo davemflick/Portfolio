@@ -52,9 +52,12 @@ $darkblue: #12646f;
 	padding-top: 150px;
 	background-image: url("./images/golf.png");
 	background-size: cover;
-	font-family: monospace;
-	text-decoration: underline;
-	color: rgba(80, 80, 80, .8);
+	#myName{
+		font-family: monospace;
+		font-size: 55px;
+		color: rgba(80, 80, 80, .8);
+	}
+	
 }
 
 .aboutContainer {
@@ -165,19 +168,19 @@ $darkblue: #12646f;
 			width: 260px;
 			height: 260px;
 			margin: 5px;
-			padding-bottom: 50px;
+			margin-bottom: 50px;
 			.projLink {
 				height: 100%;
 				display: flex;
-				justify-content: center;
+				justify-content: flex-start;
 				flex-direction: column;
 				align-items: center;
-
 				img {
 					max-width: 260px;
 					max-height: 260px;
 					border: 3px solid $brightBlue;
 					border-radius: 5%;
+					margin-bottom: 50px;
 				}
 			}
 		}

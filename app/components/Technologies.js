@@ -8,7 +8,7 @@ export default class Technologies extends React.Component {
 
 		return (
 			<div className="techContainer" id="technologies">
-			  <h3> Experience Using </h3>
+			  <h3> Skills </h3>
 			  <div className="iconCont">
 			    <i className="devicon-html5-plain-wordmark colored"></i>
 			    <i className="devicon-css3-plain-wordmark colored"></i>

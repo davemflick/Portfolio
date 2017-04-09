@@ -10,27 +10,35 @@ export default class Projects extends React.Component {
 			this.state = {
 				projects: [
 					{name: "Protect the Yard",
+					 used: "(React, Sass)",
 					 link: "https://davemflick.github.io/Dungeon-Crawler/dist/index.html",
 					 image: "./app/styles/images/Dungeon.png",},
 					{name: "Conway's Game of Life",
+					 used: "(React, Sass)",
 					 link: "https://davemflick.github.io/Game-of-Life/dist/index.html",
 					 image: "./app/styles/images/conway.png",},
 					{name: "Recipe Box",
+					 used: "(React, Sass)",
 					 link: "https://davemflick.github.io/recipe-box/dist/index.html",
 					 image: "./app/styles/images/recipes.png",},
 					{name: "Tic-Tac-Toe",
+					 used: "(JS, CSS, HTML)",
 					 link: "https://davemflick.github.io/TicTacToe/index.html",
 					 image: "./app/styles/images/tictactoe.png",},
 					{name: "Simon",
+					 used: "(JS, CSS, HTML)",
 					 link: "https://davemflick.github.io/Simon/index.html",
 					 image: "./app/styles/images/simon.png",},
 					{name: "Markdown",
+					 used: "(React, Sass)",
 					 link: "https://davemflick.github.io/markdown-previewer/dist/index.html",
 					 image: "./app/styles/images/markdown.png",},
 					{name: "Camp Leader",
+					 used: "(React, Sass)",
 					 link: "https://davemflick.github.io/camp-leader/dist/index.html",
 					 image: "./app/styles/images/campleader.png",},
 					{name: "Interactive GDP",
+					 used: "(D3, CSS)",
 					 link: "https://davemflick.github.io/GDP-Bar-Chart/",
 					 image: "./app/styles/images/gdp.png",},
 				],
@@ -44,6 +52,7 @@ export default class Projects extends React.Component {
 			projectArr.push(
 				<div className="project" key={i} >
 				<h4>{myProjects[i].name}</h4>
+				<p> {myProjects[i].used}</p>
 				<div className='projLink'>
 					<a href={myProjects[i].link} target="_blank">
 						<img src= {myProjects[i].image} alt={myProjects[i].name}/> 
