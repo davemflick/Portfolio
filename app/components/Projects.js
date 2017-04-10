@@ -41,6 +41,18 @@ export default class Projects extends React.Component {
 					 used: "(D3, CSS)",
 					 link: "https://davemflick.github.io/GDP-Bar-Chart/",
 					 image: "./app/styles/images/gdp.png",},
+					{name: "D3 Scatter Plot",
+					 used: "(D3, CSS)",
+					 link: "https://davemflick.github.io/Scatterplot-of-Cyclist/",
+					 image: "./app/styles/images/scatterplot.png",},
+					{name: "Twitch TV App",
+					 used: "(JS, jQuery, CSS)",
+					 link: "https://davemflick.github.io/twitchtv/",
+					 image: "./app/styles/images/twitch.png",},
+					{name: "Basic Calculator",
+					 used: "(jQuery, CSS)",
+					 link: "https://davemflick.github.io/Calculator/",
+					 image: "./app/styles/images/Calculator.png",},
 				],
 			}
 		}
