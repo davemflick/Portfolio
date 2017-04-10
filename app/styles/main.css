@@ -54,6 +54,12 @@ body {
     width: 30%;
     font-size: 17px;
     color: #12646f; }
+  .aboutContainer .resume {
+    color: #12646f;
+    text-decoration: underline; }
+  .aboutContainer .resume:hover {
+    color: #53b0bd;
+    cursor: pointer; }
   .aboutContainer .mePic {
     width: 35%;
     display: flex;

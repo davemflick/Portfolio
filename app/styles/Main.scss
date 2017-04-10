@@ -72,6 +72,14 @@ $darkblue: #12646f;
 		font-size: 17px;
 		color: $darkblue;
 	}
+	.resume{
+		color: $darkblue;
+		text-decoration: underline;
+	}
+	.resume:hover{
+		color: $brightBlue;
+		cursor: pointer;
+	}
 	.mePic {
 		width: 35%;
 		display: flex;
