@@ -52,7 +52,7 @@ export default class Projects extends React.Component {
 					{name: "Basic Calculator",
 					 used: "(jQuery, CSS)",
 					 link: "https://davemflick.github.io/Calculator/",
-					 image: "./app/styles/images/Calculator.png",},
+					 image: "./app/styles/images/calculator.png",},
 				],
 			}
 		}
