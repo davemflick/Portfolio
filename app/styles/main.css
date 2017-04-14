@@ -181,13 +181,24 @@ body {
     overflow: auto;
     background-color: black;
     background-color: rgba(0, 0, 0, 0.4); }
-    .certContainer .certs .popUpFcc {
+    .certContainer .certs .popUpFccFE {
       background-color: #53b0bd;
       margin: 15% auto;
       padding: 20px;
       border: 1px solid #888;
       width: 80%; }
-      .certContainer .certs .popUpFcc .exit {
+      .certContainer .certs .popUpFccFE .exit {
+        color: #53b0bd;
+        float: right;
+        font-size: 28px;
+        font-weight: bold; }
+    .certContainer .certs .popUpFccDV {
+      background-color: #53b0bd;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%; }
+      .certContainer .certs .popUpFccDV .exit {
         color: #53b0bd;
         float: right;
         font-size: 28px;
@@ -207,11 +218,11 @@ body {
       max-width: 500px;
       max-height: 500px; }
     @media (max-width: 600px) {
-      .certContainer .certs .popUpFcc, .certContainer .certs .popUpStanford {
+      .certContainer .certs .popUpFccFE, .certContainer .certs .popUpStanford, .certContainer .certs .popUpFccDV {
         margin: 15% 0;
         padding: 10px;
         width: 100%; }
-        .certContainer .certs .popUpFcc .exit, .certContainer .certs .popUpStanford .exit {
+        .certContainer .certs .popUpFccFE .exit, .certContainer .certs .popUpStanford .exit, .certContainer .certs .popUpFccDV .exit {
           display: none; }
       .certContainer .certs img {
         max-width: 300px;

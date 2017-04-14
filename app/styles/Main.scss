@@ -20,6 +20,21 @@ $tan: #c2b394;
 $brightBlue: #53b0bd;
 $darkblue: #12646f;
 
+@mixin certificates() {
+	background-color: $brightBlue;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+@mixin exitCerts() {
+	color: $brightBlue;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+};
+
 .navbar-default, .navbar{ 
 	height: 65px;
 	background: rgba(50,50,50,0);
@@ -229,30 +244,22 @@ $darkblue: #12646f;
     	overflow: auto; 
     	background-color: rgb(0,0,0); 
     	background-color: rgba(0,0,0,0.4);
-		.popUpFcc {
-			background-color: $brightBlue;
-   			margin: 15% auto;
-    		padding: 20px;
-    		border: 1px solid #888;
-    		width: 80%;
+		.popUpFccFE {
+			@include certificates();
     		.exit {
-    			color: $brightBlue;
-			    float: right;
-			    font-size: 28px;
-			    font-weight: bold;
+    			@include exitCerts();
+    		}
+		}
+		.popUpFccDV {
+			@include certificates();
+    		.exit {
+    			@include exitCerts();
     		}
 		}
 		.popUpStanford {
-			background-color: $brightBlue;
-    		margin: 15% auto; 
-    		padding: 20px;
-    		border: 1px solid #888;
-    		width: 80%;
+			@include certificates();
     		.exit {
-    			color: $brightBlue;
-			    float: right;
-			    font-size: 28px;
-			    font-weight: bold;
+    			@include exitCerts();
     		}
 		}
 		img{
@@ -261,7 +268,7 @@ $darkblue: #12646f;
 		}
 
 		@media (max-width: $smallScreen) {
-			.popUpFcc, .popUpStanford {
+			.popUpFccFE, .popUpStanford, .popUpFccDV {
 				margin: 15% 0;
 				padding: 10px;;
 				width: 100%;
