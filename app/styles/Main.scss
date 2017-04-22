@@ -1,5 +1,13 @@
 *{box-sizing: border-box;}
 
+$medScreen: 852px;
+$smallScreen: 600px;
+$lightGray: #ececec;
+$offWhite: #fbfbfb;
+$tan: #c2b394;
+$brightBlue: #53b0bd;
+$darkblue: #12646f;
+
 body, html {
 	width: 100%;
 	height: 100%;
@@ -12,13 +20,6 @@ body {
 	font-family: 'Bitter', monospace;
 }
 
-$medScreen: 852px;
-$smallScreen: 600px;
-$lightGray: #ececec;
-$offWhite: #fbfbfb;
-$tan: #c2b394;
-$brightBlue: #53b0bd;
-$darkblue: #12646f;
 
 @mixin certificates() {
 	background-color: $brightBlue;
@@ -159,9 +160,15 @@ $darkblue: #12646f;
 		#bootstrap {
 			color: #997aff;
 		}
+		#nodejs {
+			font-size: 70px;
+		}
+		#jQuery{
+			color: white;
+		}
 
 		i {
-			 width: 10%;
+			 width: 12%;
 			 font-size: 50px;
 			 padding-bottom: 35px;
 		}
@@ -169,6 +176,12 @@ $darkblue: #12646f;
 		{
 			i {
 				width: 20%;
+			}
+		}
+		@media screen and (max-width: $smallScreen)
+		{
+			i {
+				width: 25%;
 			}
 		}
 	}

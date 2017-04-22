@@ -119,13 +119,20 @@ body {
     flex-wrap: wrap; }
     .techContainer .iconCont #bootstrap {
       color: #997aff; }
+    .techContainer .iconCont #nodejs {
+      font-size: 70px; }
+    .techContainer .iconCont #jQuery {
+      color: white; }
     .techContainer .iconCont i {
-      width: 10%;
+      width: 12%;
       font-size: 50px;
       padding-bottom: 35px; }
     @media screen and (max-width: 852px) {
       .techContainer .iconCont i {
         width: 20%; } }
+    @media screen and (max-width: 600px) {
+      .techContainer .iconCont i {
+        width: 25%; } }
 
 .projCont {
   margin-top: 0;
