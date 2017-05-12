@@ -7,7 +7,7 @@ export default class Technologies extends React.Component {
 	render () {
 
 		return (
-			<div className="techContainer" id="technologies">
+			<div className="techContainer" id="skills">
 			  <h3> Skills </h3>
 			  <div className="iconCont">
 			    <i className="devicon-html5-plain-wordmark colored"></i>
