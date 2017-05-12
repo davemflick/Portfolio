@@ -40,7 +40,7 @@ export default class Certificates extends React.Component {
 	render () {
 
 		return (
-			<div className="certContainer" id="cert">
+			<div className="certContainer" id="certificates">
 				<h3> Certificates </h3>
 				<div className="certName">
 					<h4 id="fccFE" onClick={this.handleClick.bind(this)}> FCC Front End </h4>
