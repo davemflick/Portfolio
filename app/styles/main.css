@@ -31,6 +31,11 @@ body {
 .navbar-default:hover {
   background-color: rgba(50, 50, 50, 0.1); }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(-100%); }
+  100% {
+    transform: translateY(0); } }
 .openingContainer {
   display: flex;
   justify-content: center;
@@ -41,7 +46,8 @@ body {
   .openingContainer #myName {
     font-family: monospace;
     font-size: 55px;
-    color: rgba(80, 80, 80, 0.8); }
+    color: rgba(80, 80, 80, 0.8);
+    animation: 1.5s ease-out 0s 1 slideInFromLeft; }
 
 .aboutContainer {
   background-color: #ececec;
