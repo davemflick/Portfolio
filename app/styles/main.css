@@ -51,7 +51,7 @@ body {
   align-items: center;
   padding: 50px 0 50px 0; }
   .aboutContainer .aboutPara {
-    width: 30%;
+    width: 35%;
     font-size: 17px;
     color: #12646f; }
   .aboutContainer .resume {
@@ -73,7 +73,7 @@ body {
       display: none;
       border: 2px solid #53b0bd; }
   .aboutContainer .linkContainer {
-    width: 15%;
+    width: 20%;
     padding-left: none; }
     .aboutContainer .linkContainer .fa-linkedin-square {
       color: #007bb6; }
