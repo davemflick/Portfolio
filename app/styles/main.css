@@ -1,6 +1,3 @@
-* {
-  box-sizing: border-box; }
-
 body, html {
   width: 100%;
   height: 100%; }
@@ -36,6 +33,11 @@ body {
     transform: translateY(-100%); }
   100% {
     transform: translateY(0); } }
+@keyframes nameBox {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .openingContainer {
   display: flex;
   justify-content: center;
@@ -43,11 +45,13 @@ body {
   padding-top: 150px;
   background-image: url("./images/golf.png");
   background-size: cover; }
-  .openingContainer #myName {
-    font-family: monospace;
-    font-size: 55px;
-    color: rgba(80, 80, 80, 0.8);
+  .openingContainer .nameBox {
     animation: 1.5s ease-out 0s 1 slideInFromLeft; }
+    .openingContainer .nameBox #myName {
+      animation: 5s ease-out 0s nameBox;
+      font-family: monospace;
+      font-size: 55px;
+      color: rgba(80, 80, 80, 0.8); }
 
 .aboutContainer {
   background-color: #ececec;
