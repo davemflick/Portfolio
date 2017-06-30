@@ -290,6 +290,12 @@ body {
     			@include exitCerts();
     		}
 		}
+		.popUpUDBoot {
+			@include certificates();
+    		.exit {
+    			@include exitCerts();
+    		}
+		}
 		.popUpStanford {
 			@include certificates();
     		.exit {
@@ -302,7 +308,7 @@ body {
 		}
 
 		@media (max-width: $smallScreen) {
-			.popUpFccFE, .popUpStanford, .popUpFccDV {
+			.popUpFccFE, .popUpStanford, .popUpFccDV, .popUpUDBoot {
 				margin: 15% 0;
 				padding: 10px;;
 				width: 100%;

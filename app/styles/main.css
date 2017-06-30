@@ -220,6 +220,17 @@ body {
         float: right;
         font-size: 28px;
         font-weight: bold; }
+    .certContainer .certs .popUpUDBoot {
+      background-color: #53b0bd;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%; }
+      .certContainer .certs .popUpUDBoot .exit {
+        color: #53b0bd;
+        float: right;
+        font-size: 28px;
+        font-weight: bold; }
     .certContainer .certs .popUpStanford {
       background-color: #53b0bd;
       margin: 15% auto;
@@ -235,11 +246,11 @@ body {
       max-width: 500px;
       max-height: 500px; }
     @media (max-width: 600px) {
-      .certContainer .certs .popUpFccFE, .certContainer .certs .popUpStanford, .certContainer .certs .popUpFccDV {
+      .certContainer .certs .popUpFccFE, .certContainer .certs .popUpStanford, .certContainer .certs .popUpFccDV, .certContainer .certs .popUpUDBoot {
         margin: 15% 0;
         padding: 10px;
         width: 100%; }
-        .certContainer .certs .popUpFccFE .exit, .certContainer .certs .popUpStanford .exit, .certContainer .certs .popUpFccDV .exit {
+        .certContainer .certs .popUpFccFE .exit, .certContainer .certs .popUpStanford .exit, .certContainer .certs .popUpFccDV .exit, .certContainer .certs .popUpUDBoot .exit {
           display: none; }
       .certContainer .certs img {
         max-width: 300px;

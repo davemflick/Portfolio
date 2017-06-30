@@ -9,6 +9,7 @@ export default class Certificates extends React.Component {
 		this.state = {
 			styleFccFE: {display: "none"},
 			styleFccDV: {display: "none"},
+			styleUDBoot: {display: "none"},
 			styleStan: {display: "none"},
 			style: {display: "none"},
 		}
@@ -28,6 +29,10 @@ export default class Certificates extends React.Component {
 			this.state.styleStan = {display: "inline-block"};
 			this.state.style = {display: "inline-block"};
 		}
+		else if(e.target.id == "UDBoot") {
+			this.state.styleUDBoot = {display: "inline-block"};
+			this.state.style = {display: "inline-block"};
+		}
 		if(e.target.className == "exit" || e.target.className == "certs") {
 			this.state.styleFccFE = {display: "none"};
 			this.state.styleFccDV = {display: "none"};
@@ -45,6 +50,7 @@ export default class Certificates extends React.Component {
 				<div className="certName">
 					<h4 id="fccFE" onClick={this.handleClick.bind(this)}> FCC Front End </h4>
 					<h4 id="fccDV" onClick={this.handleClick.bind(this)}> FCC Data Viz </h4>
+					<h4 id="UDBoot" onClick={this.handleClick.bind(this)}> Udemy Bootcamp </h4>
 					<h4 id="stanford" onClick={this.handleClick.bind(this)}> Stanford cs101 </h4>
 				</div>
 				<div className="certs" style={this.state.style} onClick={this.handleClick.bind(this)}>
@@ -56,6 +62,11 @@ export default class Certificates extends React.Component {
 
 					<div className="popUpFccDV" style={this.state.styleFccDV}>
 						<img id="fccDV" src="./app/styles/images/dataViz.png" alt="freeCodeCamp Data Viz" />
+						<button className="exit" onClick={this.handleClick.bind(this)}> X </button>
+					</div>
+
+					<div className="popUpUDBoot" style={this.state.styleUDBoot}>
+						<img id="UDBoot" src="./app/styles/images/udemyBootcamp.jpeg" alt="udemy Bootcamp" />
 						<button className="exit" onClick={this.handleClick.bind(this)}> X </button>
 					</div>
 
