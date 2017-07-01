@@ -15,6 +15,8 @@ export default class Technologies extends React.Component {
 			    <i className="devicon-javascript-plain colored"></i>
 			    <i className="devicon-jquery-plain-wordmark" id="jQuery"></i>
 			    <i className="devicon-nodejs-plain-wordmark colored" id="nodejs"></i>
+			    <i className="devicon-express-original colored"></i>
+			    <i className="devicon-mongodb-plain-wordmark colored"></i>
 			    <i className="devicon-bootstrap-plain-wordmark" id="bootstrap"></i>
 			    <i className="devicon-sass-original colored"></i>
 			    <i className="devicon-react-original-wordmark colored"></i>
