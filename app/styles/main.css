@@ -23,7 +23,8 @@ body {
       color: #aaa;
       margin: 0; }
     .navbar-default .navbar-collapse .pdLink:hover, .navbar .navbar-collapse .pdLink:hover {
-      background: rgba(50, 50, 50, 0.1); }
+      background: rgba(50, 50, 50, 0.1);
+      border-radius: 8px; }
 
 .navbar-default:hover {
   background-color: rgba(50, 50, 50, 0.1); }
