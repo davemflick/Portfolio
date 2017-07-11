@@ -11,7 +11,7 @@ export default class Projects extends React.Component {
 				projects: [
 					{name: "Voting App",
 					 used: "(Express, Mongodb, React)",
-					 link: "https://time-to-vote.herokuapp.com//",
+					 link: "https://time-to-vote.herokuapp.com/",
 					 image: "./app/styles/images/votingApp.png",},
 					 {name: "Golf Brands",
 					 used: "(Express, Mongodb, PassportJS)",
