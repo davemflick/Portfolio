@@ -9,7 +9,11 @@ export default class Projects extends React.Component {
 			super(props);
 			this.state = {
 				projects: [
-					{name: "Golf Brands",
+					{name: "Voting App",
+					 used: "(Express, Mongodb, React)",
+					 link: "https://time-to-vote.herokuapp.com//",
+					 image: "./app/styles/images/votingApp.png",},
+					 {name: "Golf Brands",
 					 used: "(Express, Mongodb, PassportJS)",
 					 link: "https://golfbrandboard.herokuapp.com/",
 					 image: "./app/styles/images/golfBrands.png",},
