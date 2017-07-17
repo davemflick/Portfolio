@@ -186,7 +186,6 @@ body {
           position: relative;
           bottom: 50px;
           right: 0;
-          z-index: 100;
           background-color: rgba(210, 210, 210, 0.9);
           font-size: 0.9em;
           color: #12646f; }
