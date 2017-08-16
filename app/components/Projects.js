@@ -17,7 +17,7 @@ export default class Projects extends React.Component {
 					 {name: "Nightlife",
 					 used: "Node, Express, Mongodb, React, Twitter-PassportJS",
 					 link: "https://my-nightlife-fcc-app.herokuapp.com/",
-					 image: "./app/styles/images/Nightlife.png",},
+					 image: "./app/styles/images/nightlife.png",},
 					{name: "Protect the Yard",
 					 used: "React, Sass",
 					 link: "https://davemflick.github.io/Dungeon-Crawler/dist/index.html",
