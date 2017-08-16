@@ -7,13 +7,17 @@ export default class Projects extends React.Component {
 			this.state = {
 				projects: [
 					{name: "Voting App",
-					 used: "Express, Mongodb, React, Node, PassportJS",
+					 used: "Node, Express, Mongodb, React, PassportJS",
 					 link: "https://time-to-vote.herokuapp.com/",
 					 image: "./app/styles/images/votingApp.png",},
 					 {name: "Golf Brands",
 					 used: "Express, Mongodb, Mongoose, PassportJS",
 					 link: "https://golfbrandboard.herokuapp.com/",
 					 image: "./app/styles/images/golfBrands.png",},
+					 {name: "Nightlife",
+					 used: "Node, Express, Mongodb, React, Twitter-PassportJS",
+					 link: "https://my-nightlife-fcc-app.herokuapp.com/",
+					 image: "./app/styles/images/Nightlife.png",},
 					{name: "Protect the Yard",
 					 used: "React, Sass",
 					 link: "https://davemflick.github.io/Dungeon-Crawler/dist/index.html",
